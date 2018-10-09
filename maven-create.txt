@@ -1,9 +1,0 @@
-
-#To create the maven project
-mvn archetype:generate -DgroupId=com.walmartlabs -DartifactId=ticket-reservation -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-
-#To run the junit test cases and package it into jar file
-mvn package
-
-#To run the jar file
-java -cp target/ticket-reservation-1.0-SNAPSHOT.jar com.walmartlabs.App
