@@ -1,0 +1,18 @@
+Following were the assumptions made while developing the application:
+
+1) The total number of tickets in the venue has been fixed as 10. This has been set, just as a sample.
+
+2) The maximum ticket holding time has been set as 10 seconds, which can also be increased how much ever time 
+   the requirement says. Again as said earlier, this has been set as a sample.
+
+3) Singleton design pattern has been used to design the entire code. Since the number of tickets available at a given point of time, should be same for different users, having a single object for this class supports this requirement.
+
+4) Both the findAndHoldSeats and the reserveSeats function have been synchronized, to allow only thread (i.e user) to hold or reserve seats at a time. Since they have synchronized blocks, this design enabled me to store the timestamp at which the user held the seat, as a way to differentiate users and to check the time for which they have held the seats.
+
+5) Please note the interface has been modified i.e. the reserveSeats function in the interface had seatHoldId of Integer data type. I have modified seatHoldId to be Long, to hold the timestamp data.
+
+6) The seats which are been held, are not reflected in the number of tickets available. Only when the user reserves the seats, the number of tickets availabe is reduced. So, if two users try to hold same seats at the same time, the user who reserves the seats first, gets the tickets.
+
+7) The JUnit test cases, have been written to test different conditions in the reserveSeats function. The goal was to cover as many branches as possible (White Box Testing).
+
+8) As a suggestion, we can add an additional function in the Ticket Service Interface, that clears the map, that stores seat holder id information. This is because, after a given point of time, the map will grow in size, based on the number of users.          
