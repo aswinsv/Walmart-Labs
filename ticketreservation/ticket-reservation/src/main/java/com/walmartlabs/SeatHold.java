@@ -4,7 +4,7 @@ package com.walmartlabs;
  * @author aswinram
  * Description: The class below holds information about the person holding the seat.
  * It stores the following information:
- * 	1) seatHoldId- The timestamp at which the user held the seat.
+ *  1) seatHoldId- The timestamp at which the user held the seat.
  *  2) numSeats- The number of seats, the user wanted to hold
  *  3) customerEmail- The email id of the user, who wanted to hold the tickets   
  */

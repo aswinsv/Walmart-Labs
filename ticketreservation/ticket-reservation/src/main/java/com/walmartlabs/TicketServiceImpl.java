@@ -17,6 +17,8 @@ import java.util.HashMap;
 public class TicketServiceImpl implements TicketService {
 	// Eager instantiation of the Singleton object
 	private static TicketServiceImpl ticketServiceImpl = new TicketServiceImpl();
+	// All the seat holders information stored in a hash map
+	// The information held in this map used by the reserve seats service
 	private HashMap<Long, SeatHold> seatHolderMapping = new HashMap<Long, SeatHold>();
 	// A timer value of 10 seconds has been provided for every user to hold the
 	// seats
