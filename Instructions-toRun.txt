@@ -1,4 +1,4 @@
 
 1) Please install maven, if it has not been installed in your system.
-2) To build the solution and run the JUnit test cases, please use the following command:
+2) To build the solution and run the JUnit test cases, please run the following command from command line:
    mvn package
